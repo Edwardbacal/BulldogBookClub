@@ -1,0 +1,133 @@
+body {
+  background-image: url(../assets/newPaper.jpg);
+}
+
+.wrapper {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  @include bodyText(25px, 1);
+  color: $logoColour;
+  padding: 25px;
+  transition: .1s;
+  background-color: transparent;
+  border: none;
+  outline: none;
+    &:hover {
+        color: $highlightColour;
+    }
+    &:focus {
+        color: $highlightColour;
+        outline: 2px dotted $logoColour;
+    }
+}
+
+
+header {
+  background-image: linear-gradient(176deg, #f6e7e2cc 10%, #f2edec00 75%);
+    div {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+        img {
+          height: 70px;
+          position: absolute;
+          top: 18px;
+          left: 0%;
+        }
+        button {
+          position: absolute;
+          top: 21px;
+          right: 0;
+          display: none;
+        }
+    }
+}
+
+nav {
+  width: 40%;
+}
+
+.navDisplay {
+    display: flex;
+    margin: 10px 0 10px 100px;
+  }
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+  min-width: 300px;
+}
+
+
+.navDisplay {
+  display: flex;
+  margin: 10px 0 10px 100px;
+}
+
+h1 {
+  margin-left: 100px;
+}
+
+.title {
+  border-top: 3px dotted $logoColour;
+  padding-top: 40px;
+}
+
+.titleInfo {
+  line-height: 1.4;
+}
+
+.cover img {
+  width: 30%;
+  margin: 0 7.5% 5% 0; 
+  border: 1px solid #7b3b7859;
+  border-radius: 1px;
+  min-width: 300px;
+  float: left;
+}
+
+  
+
+// Contents
+
+
+.rotate {
+  transform: rotate(90deg);
+  margin-right: 40px;
+}
+
+.titleHeadings {
+  display: flex;
+  align-items: center;
+  padding: 35px 0;
+  border-top:  3px dotted $bodyColour;
+    &:hover {
+      color: $logoColour;
+    }
+}
+    
+.textDisplay {
+  background-color: rgba(251, 250, 248, 1);
+  border-radius: 3px;
+  margin: -50px 0px 50px 50px;
+  padding: 25px;
+  position: relative;
+  display: none;
+}
+
+footer {
+  background-image: linear-gradient(180deg, rgba(247, 246, 244, 0.1), #f6e7e2);
+  p {
+    text-align: right;
+    padding: 30px 3% 10px 0;
+    opacity: 40%;
+    }            
+}
+    

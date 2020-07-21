@@ -1,0 +1,198 @@
+@media(max-width: 900px) {
+
+  header div button {
+    display: block;
+  }
+
+  nav {
+    width: 0;
+  }
+  
+  .ham {
+      display: block;
+  }
+
+  .hamMenu {
+    display: none;
+  }
+
+
+}
+
+@media(max-width: 784px) {
+
+  h2 {
+    font-size: 35px;      
+      span {
+        font-size: 25px;
+        padding-top: 0px;
+      }
+  }
+
+  h3 {
+    font-size: 30px;
+    padding: 10px 0 10px 0;
+  }
+
+  h4 {
+    @include bodyText (17px, 1.2);
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .contents i {
+    font-size: 60px;
+  }
+
+  .contents h2 {
+    padding-top: 50px;
+  }
+
+  .textDisplay {
+    padding: 15px;
+  }
+}
+
+@media(max-width: 579px) {
+
+  header {
+    height: 150px;
+      div {
+        padding: 20px 0;
+        img, button {
+          top: 34px;
+        }
+      }
+  }
+
+    h1 {
+      font-size: 35px;
+      width: 150px;
+    }
+
+    .navDisplay {
+      flex-direction: column;
+      margin: 0 0 0 100px;
+        ul {
+          min-width: 0px;
+        }
+          li {
+            padding: 5px 0;
+              a {
+                padding: 6px 8px 3px 7px;
+              }
+          }
+    }
+
+    .cover img {
+      width: 80%;
+      margin: 0 10% 25px 10%;
+      min-width: 0;
+      }
+
+    .titleInfo {
+      padding: 0 5%;
+    }
+
+    h2, h3 {
+      font-size: 30px;
+      margin-top: 10px;
+        span {
+          font-size: 20px;
+        }
+    }
+    
+    h3 {
+      margin-top: 0;
+    }
+
+    h2 .author {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
+    p {
+        font-size: 15px;
+        padding: 20px 0px 20px 20px;
+    }
+
+    .about {
+      padding: 20px 0;
+    }
+
+    .titleHeadings {
+        padding: 25px 0 15px 0;
+         i {
+            font-size: 50px
+        }
+}
+
+    .textDisplay {
+        margin: -20px 0px 50px 30px;
+    }
+
+    .buttons {
+        left: -43px;
+            li {
+            height: 30px;
+            width: 30px;
+                i {
+                    font-size: 16px;
+                    padding: 7px;
+                }
+            }
+        }
+}
+
+@media(max-width: 426px) {
+       
+  h2, h3 {
+    font-size: 22px;
+      span {
+        font-size: 17px;
+      }
+  }
+
+  h2 .author {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .contents h2 {
+    padding-top: 25px;
+  }
+
+  h3 {
+  font-size: 22px;
+    span {
+      font-size: 17px;
+    }
+  }
+  
+  .textDisplay {
+      margin: -20px 0px 30px 00px;
+  }
+
+  .titleHeadings i {
+      font-size: 40px;
+      margin: 20px 4% 0 0;
+  }
+
+  .buttons {
+      left: 0px;
+      margin-top: 8px;
+      li {
+          background-color: transparent;
+          i {
+              font-size: 14px;
+          }    
+        }
+    }
+}
